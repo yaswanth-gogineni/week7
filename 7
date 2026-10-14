@@ -1,0 +1,52 @@
+# WEEK 7: CONSTRAINT SPECIFICATION & ITERATIVE REFINEMENT
+ 
+print("===== WEEK 7: CONSTRAINT SPECIFICATION & ITERATIVE REFINEMENT =====")
+ 
+initial_prompt = """
+Explain Cloud Computing.
+"""
+ 
+refined_prompt_1 = """
+Explain Cloud Computing.
+ 
+Constraints:
+1. Use simple English.
+2. Keep the answer under 150 words.
+3. Give 3 real-world examples.
+"""
+ 
+refined_prompt_2 = """
+Explain Cloud Computing to a beginner engineering student.
+ 
+Constraints:
+1. Start with a simple definition.
+2. Explain how Cloud Computing works.
+3. Give exactly 3 real-world examples.
+4. Mention 3 advantages.
+5. Use simple English.
+6. Keep the answer between 100 and 150 words.
+"""
+ 
+final_prompt = """
+You are a Cloud Computing teacher.
+ 
+Explain Cloud Computing to a first-year engineering student.
+ 
+Follow these constraints:
+- Give a definition in 2 sentences.
+- Explain how it works in simple language.
+- Give exactly 3 real-world examples.
+- List exactly 3 advantages.
+- Do not use advanced technical terms.
+- Do not include unrelated information.
+- Keep the complete answer under 150 words.
+"""
+ 
+print("\n--- INITIAL PROMPT ---")
+print(initial_prompt)
+print("\n--- REFINEMENT 1 ---")
+print(refined_prompt_1)
+print("\n--- REFINEMENT 2 ---")
+print(refined_prompt_2)
+print("\n--- FINAL REFINED PROMPT ---")
+print(final_prompt)
